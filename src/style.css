@@ -1530,3 +1530,59 @@ body {
     animation: none;
   }
 }
+
+/* Contactos telefónicos de Lo de Darío */
+.footer-phones {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 12px;
+  margin: 18px 0;
+}
+.footer-phones .footer-contact,
+.footer-secondary-phone {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 7px;
+  min-width: 0;
+  padding: 16px 20px;
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 16px;
+  text-decoration: none;
+}
+.footer-phones .footer-contact {
+  background: #176b43;
+  color: #fff;
+}
+.footer-secondary-phone {
+  background: rgba(255,255,255,.06);
+  color: inherit;
+}
+.footer-phones strong,
+.footer-secondary-phone strong {
+  font-size: 1.15rem;
+  letter-spacing: .02em;
+}
+.footer-phones .phone-label {
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+.footer-phones a > span:last-child {
+  font-size: .82rem;
+}
+.footer-phones a:hover {
+  transform: translateY(-2px);
+}
+@media (max-width: 520px) {
+  .footer-phones {
+    flex-direction: column;
+  }
+  .footer-phones .footer-contact,
+  .footer-secondary-phone {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

@@ -1,6 +1,6 @@
 import './style.css';
 
-const whatsapp = '5491148702907';
+const whatsapp = '5491176703052';
 const wa = (mensaje: string) =>
   `https://wa.me/${whatsapp}?text=${encodeURIComponent(mensaje)}`;
 
@@ -242,7 +242,7 @@ const tarjetas = categorias.map(categoria => `
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <header class="header">
     <a href="#inicio" class="brand">
-      <img src="/images/logo~2.jpg" alt="Logo de Lo de Darío">
+      <img src="/images/logo.jpg" alt="Logo de Lo de Darío">
       <span>
         <strong>LO DE DARÍO</strong>
         <small>PARRILLA · PIZZERÍA · CAFÉ</small>
@@ -262,7 +262,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <div class="hero-overlay"></div>
       <div class="hero-content">
         <span class="hero-kicker">POMPEYA · BUENOS AIRES</span>
-        <img class="hero-logo" src="/images/logo~2.jpg" alt="Lo de Darío Parrilla">
+        <img class="hero-logo" src="/images/logo.jpg" alt="Lo de Darío Parrilla">
         <span class="hero-intro">La buena mesa tiene un lugar</span>
         <h1>Sabores que reúnen.<br><em>Momentos que quedan.</em></h1>
         <p class="hero-description">
@@ -349,9 +349,20 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   </main>
 
   <footer class="footer">
-    <a class="footer-brand" href="#inicio"><img src="/images/logo~2.jpg" alt=""><span><strong>LO DE DARÍO</strong><small>PARRILLA</small></span></a>
+    <a class="footer-brand" href="#inicio"><img src="/images/logo.jpg" alt=""><span><strong>LO DE DARÍO</strong><small>PARRILLA</small></span></a>
     <p>Buena comida, buenos momentos y una mesa para compartir.</p>
-    <a class="footer-contact" href="${wa('Hola, Lo de Darío. Quería hacer una consulta.')}" target="_blank" rel="noopener">WHATSAPP ↗</a>
+    <div class="footer-phones">
+      <a class="footer-contact" href="${wa('Hola, Lo de Darío. Quería hacer una consulta.')}" target="_blank" rel="noopener">
+        <span class="phone-label">WHATSAPP PRINCIPAL</span>
+        <strong>11 7670-3052</strong>
+        <span>Contactar por WhatsApp ↗</span>
+      </a>
+      <a class="footer-secondary-phone" href="tel:+5491148702907">
+        <span class="phone-label">TELÉFONO SECUNDARIO</span>
+        <strong>11 4870-2907</strong>
+        <span>Llamar por teléfono ↗</span>
+      </a>
+    </div>
     <div class="footer-bottom"><span>© ${new Date().getFullYear()} Lo de Darío</span><span>Av. Sáenz 702 · Pompeya · CABA</span><a href="#inicio">VOLVER ARRIBA ↑</a></div>
   </footer>
 
