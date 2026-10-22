@@ -357,12 +357,44 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <strong>11 7670-3052</strong>
         <span>Contactar por WhatsApp ↗</span>
       </a>
-      <a class="footer-secondary-phone" href="tel:+5491148702907">
+      <a class="footer-secondary-phone" href="${wa('Hola, Lo de Darío. Quería hacer una consulta.')}" target="_blank" rel="noopener">
         <span class="phone-label">TELÉFONO SECUNDARIO</span>
         <strong>11 4870-2907</strong>
         <span>Llamar por teléfono ↗</span>
       </a>
     </div>
+    <div class="footer-socials" aria-label="Redes sociales de Lo de Darío">
+      <a class="social-link social-instagram"
+         href="https://www.instagram.com/lodedariorestaurantee/"
+         target="_blank" rel="noopener noreferrer"
+         aria-label="Seguir a Lo de Darío en Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <defs>
+            <linearGradient id="instagram-gradient" x1="0" y1="1" x2="1" y2="0">
+              <stop offset="0%" stop-color="#ffd776"/>
+              <stop offset="48%" stop-color="#f56040"/>
+              <stop offset="100%" stop-color="#c13584"/>
+            </linearGradient>
+          </defs>
+          <rect x="1" y="1" width="22" height="22" rx="6" fill="url(#instagram-gradient)"/>
+          <rect x="5.5" y="5.5" width="13" height="13" rx="4" fill="none" stroke="#fff" stroke-width="1.8"/>
+          <circle cx="12" cy="12" r="3.2" fill="none" stroke="#fff" stroke-width="1.8"/>
+          <circle cx="17.2" cy="6.9" r="1.1" fill="#fff"/>
+        </svg>
+        <span>Instagram</span>
+      </a>
+      <a class="social-link social-facebook"
+         href="https://www.facebook.com/share/199h2yLaW9/"
+         target="_blank" rel="noopener noreferrer"
+         aria-label="Visitar a Lo de Darío en Facebook">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect width="24" height="24" rx="5" fill="#1877F2"/>
+          <path d="M13.8 21v-8h2.7l.4-3.1h-3.1v-2c0-.9.3-1.5 1.6-1.5H17V3.6c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H7.5V13h2.8v8z" fill="#fff"/>
+        </svg>
+        <span>Facebook</span>
+      </a>
+    </div>
+
     <div class="footer-bottom"><span>© ${new Date().getFullYear()} Lo de Darío</span><span>Av. Sáenz 702 · Pompeya · CABA</span><a href="#inicio">VOLVER ARRIBA ↑</a></div>
   </footer>
 
